@@ -34,19 +34,6 @@ Very dark blue: hsl(240, 100%, 5%)
 
 ## HTML Text
 
-Home
-New
-Popular
-Trending
-Categories
-
-The Bright Future of Web 3.0?
-
-We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
-But is it really fulfilling its promise?
-
-Read more
-
 New
 
 Hydrogen VS Electric Cars

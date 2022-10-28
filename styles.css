@@ -24,6 +24,7 @@ body{
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    background-color: var(--off-white);
 }
 
 /* Menu */
@@ -32,7 +33,7 @@ body{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 60px;
+    padding: 60px 120px;
 }
 
 .header-nav-links{
@@ -43,7 +44,7 @@ body{
 }
 
 .header-nav-links li{
-    font-family: var(--main-font);
+    font-family: var(--secondary-font);
     color: var(--dark-grayish-blue);
     font-weight: 600;
     padding-left: 20px;
@@ -64,12 +65,66 @@ main{
 
 .main-top{
     border: 1px solid red;
-    height: 400px;
-    margin: 0 70px;
+   
+    margin: 0 130px;
 }
 
 .main-bottom{
     border: 1px solid blue;
     height: 200px;
-    margin: 0 70px;
+    margin: 0 130px;
+}
+
+.main-top{
+    display: flex;
+}
+.main-top_hero{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-info{
+    display: flex;
+    padding-top: 30px;
+}
+
+.hero-info_title{
+    width: 415px;
+    padding-right: 30px;
+}
+.hero-info_title h1{
+    font-family: var(--secondary-font);
+    color: var(--very-dark-blue);
+    font-size: 52px;
+}
+
+.hero-info_text{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 415px;
+    padding-left: 30px;
+}
+
+.hero-info_text p{
+    font-family: var(--main-font);
+    color: var(--dark-grayish-blue);
+}
+
+.hero-info_text button{
+    background-color: var(--soft-red);
+    font-family: var(--main-font);
+    border: none;
+    padding: 14px 10px;
+    color: var(--off-white);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.main-top_news{
+    background-color:var(--very-dark-blue);
+    width: 300px;
+    height: 340px;
 }
