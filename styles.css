@@ -95,7 +95,7 @@ main{
 .hero-info_title h1{
     font-family: var(--secondary-font);
     color: var(--very-dark-blue);
-    font-size: 52px;
+    font-size: 60px;
 }
 
 .hero-info_text{
@@ -104,6 +104,7 @@ main{
     align-content: space-between;
     width: 415px;
     padding-left: 30px;
+    line-height: 1.8;
 }
 
 .hero-info_text p{
@@ -112,15 +113,22 @@ main{
 }
 
 .hero-info_text button{
+    margin-top: 20px;
     background-color: var(--soft-red);
     font-family: var(--main-font);
     border: none;
-    padding: 14px 10px;
+    padding: 16px 42px;
     color: var(--off-white);
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    transition: all ease-in-out .2s;
+}
+
+.hero-info_text button:hover{
+    cursor: pointer;
+    background-color: var(--very-dark-blue);
 }
 
 .main-top_news{
