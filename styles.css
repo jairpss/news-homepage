@@ -105,6 +105,8 @@ main{
 .hero-info_text p{
     font-family: var(--main-font);
     color: var(--dark-grayish-blue);
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .hero-info_text button{
@@ -129,8 +131,54 @@ main{
 .main-news{
     background-color:var(--very-dark-blue);
     grid-area: news;
-    border: 2px solid red;
 }
+
+.main-news-container{
+    display: flex;
+    flex-direction: column;
+    padding: 42px 32px;
+}
+
+.main-news-container h2{
+    color: var(--soft-orange);
+    font-family: var(--secondary-font);
+    font-size: 42px;
+    margin-bottom: 24px;
+}
+
+.main-news-container_info{
+    border-bottom: 2px solid var(--dark-grayish-blue);
+    margin-bottom: 24px;
+}
+
+.last{
+    border-bottom: none;
+}
+
+.main-news-container_info a{
+    color: var(--off-white);
+    font-family: var(--main-font);
+    font-size: 22px;
+    font-weight: 600;
+    transition: all ease-in-out .1s;
+}
+
+.main-news-container_info a:hover{
+    color: var(--soft-orange);
+    cursor: pointer;
+}
+.main-news-container_info p{
+    color: var(--dark-grayish-blue);
+    font-family: var(--main-font);
+    line-height: 1.5;
+    margin-top: 12px;
+    margin-bottom: 38px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+
 
 .main-cards{
     grid-area: cards;
