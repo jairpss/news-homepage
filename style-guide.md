@@ -31,17 +31,3 @@ Very dark blue: hsl(240, 100%, 5%)
 
 - Family: [Inter](https://fonts.google.com/specimen/Inter)
 - Weights: 400, 700, 800
-
-## HTML Text
-
-01
-Reviving Retro PCs
-What happens when old PCs are given modern upgrades?
-
-02
-Top 10 Laptops of 2022
-Our best picks for various needs and budgets.
-
-03
-The Growth of Gaming
-How the pandemic has sparked fresh opportunities.

@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root{
     --soft-orange: hsl(35, 77%, 62%);
@@ -11,7 +10,6 @@
     --very-dark-blue: hsl(240, 100%, 5%);
 
     --main-font: 'Inter', sans-serif;
-    --secondary-font: 'Epilogue', sans-serif;
 }
 
 *{
@@ -44,7 +42,7 @@ body{
 }
 
 .header-nav-links li{
-    font-family: var(--secondary-font);
+    font-family: var(--main-font);
     color: var(--dark-grayish-blue);
     font-weight: 600;
     padding-left: 20px;
@@ -62,10 +60,9 @@ main{
     padding: 0 130px;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
     gap: 20px 20px; 
     grid-template-areas: 
-        "image image news"
         "image image news"
         "title text news"
         "cards cards cards"; 
@@ -87,7 +84,7 @@ main{
     grid-area: title;
 }
 .hero-info_title h1{
-    font-family: var(--secondary-font);
+    font-family: var(--main-font);
     color: var(--very-dark-blue);
     font-size: 60px;
 }
@@ -98,7 +95,7 @@ main{
     flex-direction: column;
     align-content: space-between;
     width: 415px;
-    padding-left: 30px;
+    padding: 0 20px;
     line-height: 1.8;
 }
 
@@ -141,7 +138,7 @@ main{
 
 .main-news-container h2{
     color: var(--soft-orange);
-    font-family: var(--secondary-font);
+    font-family: var(--main-font);
     font-size: 42px;
     margin-bottom: 24px;
 }
@@ -177,10 +174,56 @@ main{
     font-size: 16px;
 }
 
-
-
+/*CARDS*/
 
 .main-cards{
     grid-area: cards;
-    border: 2px solid pink; 
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+}
+
+.card-image{
+    margin-right: 24px;
+}
+
+.card-image img{
+    height: 160px;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info_number h4{
+    font-family: var(--main-font);
+    color: var(--grayish-blue);
+    font-size: 36px;
+    padding: 0 0 12px 0;
+}
+
+.card-info_title h5{
+    font-family: var(--main-font);
+    color: var(--vary-dark-blue);
+    font-size: 22px;
+    font-weight: 800;
+    padding-bottom: 12px;
+    transition: all ease-in-out .1s;
+}
+
+.card-info_title h5:hover{
+    color: var(--soft-red);
+    cursor: pointer;
+}
+
+.card-info_text p{
+    font-family: var(--main-font);
+    color: var(--dark-grayish-blue);
+    font-size: 16px;
+    font-weight: 600;
 }
